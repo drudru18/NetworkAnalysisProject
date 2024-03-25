@@ -25,21 +25,21 @@ def get_dns_servers(pcap_file):
             try:
                 if packet.dns.qry_name:
                     dns_server = packet.dns.qry_name
-                    dns_ip = packet.ip.src
-                    ip_version = "IPv4" if ":" not in dns_ip else "IPv6"
+                    # dns_ip = packet.ip.src
+                    # ip_version = "IPv4" if ":" not in dns_ip else "IPv6"
 
                     # Check if DNS server already exists in the dictionary
                     if dns_server not in dns_servers:
                         # If not, initialize the entry with an empty list of authoritative DNS servers
-                        dns_servers[dns_server] = {"Sub-domains": {}, "IP Protocol": ""}
+                        dns_servers[dns_server] = {"Main domains": {}}
                     
                     # Add the IP protocol (here, most of the time, it will be IPv4)
-                    dns_servers[dns_server]["IP Protocol"] = ip_version
+                    # dns_servers[dns_server]["IP Protocol"] = ip_version
 
                     # Add the authoritative DNS server if it's not already in the list
                     auth_serv = get_authoritative_nameserver(dns_server)
-                    if auth_serv not in dns_servers[dns_server]["Sub-domains"].items():
-                        dns_servers[dns_server]["Sub-domains"] = auth_serv
+                    if auth_serv not in dns_servers[dns_server]["Main domains"].items():
+                        dns_servers[dns_server]["Main domains"] = auth_serv
             except AttributeError:
                 pass
     
@@ -301,6 +301,38 @@ def ns_dns(domain, liste):
 #    Expliquez comment ils sont utilisés par l’application.
 
 # A: Autre que QUIC, DNS et HTTP3, le protocole SSDP (Simple Service Discovery Protocol) est utilisé pour découvrir des services disponibles sur un réseau local. Cela permet aux appareils de s'alerter mutuellement de leur présence sur le réseau et de partager des informations sur les services qu'ils offrent.
+
+
+
+# Q: L’utilisation du DNS est-elle sécurisée ? Comment ?
+
+# A: L'utlisation du DNS en soi n'est pas très sécurisée sachant que c'est un protocole qui ne vérifie pas l'idéntité de l'utilisateur. TLS de l'autre côté est un protocole où les données sont chiffrées mais qui peuvent être déchiffreés grâce à une clé SSL générée par le navigateur.
+
+
+
+# Q: Quelles versions de TLS sont utilisées ? Précisez les protocoles de transport sécurisés par ces versions.
+
+# A: Lors des Client Hello, nous pouvons aperceveoir dans les extensions les versions de TLS utilisées par iCloud, qui sont les versions 1.2 et 1.3.
+#    Généralement, TLS est construit au-dessus de TCP, encryptant les données de l'application (si on ne décrypte pas les paquets, nous pouvons apercevoir un 'Application Data' dans l'information du packet). Le TLS encrypte vraiment le payload du packet et ceci ne peut être décryptable. En décryptant le reste du packet, la plupart du temps on tombe sur du HTTP2 ou HTTP3.
+
+
+
+# Q: Quel est la durée de vie des certificats utilisés ? Par qui sont-ils certifiés ?
+
+# A: La durée de vie des certificats TLS utilisés est de 13 mois environ (en tapant la commande tls.handshake.type==11 dans la barre des filtres on peut trouver les packets qui ont des certificats). Les paquets sont certifiés par Apple Inc, Microsoft Azure ou DigiCert Inc.
+
+
+
+# Q: Lorsque vous pouvez observer l’établissement du chiffrement, quels sont les algorithmes de chiffrement utilisés ?
+
+# A: Le chiffrement des certificats fournis par Apple se fait en utilisant l'algorithme sha256WithRSAEncryption. Pour les certificats fournis par Microsoft Azure et DigiCert Inc, ceux-ci utilisent l'algorithme sha384WithRSAEncryption pour l'encryption. Pour le 'Certificate Verify', l'algorithme utilisé est ecdsa_secp256r1_sha256 tandis que pour le 'Server Key Exchange', on utilise l'algorithme rsa_pss_rsae_sha256. On aperçoit églement une autre organisation nomée Comod CA Limited qui elle aussi fournit des certificats encryptés par le même algorithme que Apple utilise.
+
+
+
+# Q: Si vous observez du trafic UDP, semble-t-il chiffré ? Comment est-il sécurisé ?
+
+# A: Le seul trafic UDP qui est cncrypté est celui utilisé par le protocole QUIC/HTTP3 puisque celui-ci utilise TLS pour encrypter ses données. DNS lui, n'est pas sécurisé. Pour le protocole QUIC, dans le premier paquet QUIC détecté, nous pouvons voir dans le handshake protocol, (dans la partie CRYPTO du packet), une section 'Cipher Suite' qui contient 3 algorithmes de hashage des données: TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256 et TLS_AES_256_GCM_SHA384. Nous pouvons constater que c'est bien TLS qui encrypte les données. Ce sont les 3 algorithmes utilisés par défaut. (d'après https://wiki.openssl.org/index.php/TLS1.3 (note de bas de page))
+
 
 if __name__ == '__main__':
     pass
