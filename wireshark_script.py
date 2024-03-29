@@ -2,39 +2,40 @@ import pyshark
 import dns.resolver
 import json
 
+"""
+    AFIN DE FAIRE TOURNER LE SCRIPT, VEUILLEZ LIRE LA CONDITION if __name__=='__main__': SE TROUVANT EN BAS DU SCRIPT
+"""
 
-# get the dns servers used and stock them into the file
+
+
+# cette fonction crée un dictionnaire dans le fichier dns_servers.json avec tous les serveurs dns trouvés dans la
+# capture de paquets et également les serveurs alias et les serveurs autoritatifs
 
 def get_dns_servers(pcap_file):
 
-    # Dictionary to store DNS servers with their information
+    # dico pour insérer les serveurs
     dns_servers = {}
 
-    # Open pcap file
+    # on ouvre le fichier pcap
     with pyshark.FileCapture(pcap_file, 'r') as cap:
         for packet in cap:
             try:
                 if packet.dns.qry_name:
                     dns_server = packet.dns.qry_name
-                    # dns_ip = packet.ip.src
-                    # ip_version = "IPv4" if ":" not in dns_ip else "IPv6"
 
-                    # Check if DNS server already exists in the dictionary
+                    # on regarde si le serveur existe déjà dans le dico
                     if dns_server not in dns_servers:
-                        # If not, initialize the entry with an empty list of authoritative DNS servers
+                        # si non, on crée un sous dictionnaire à se serveur avec les serveurs alias et autoritatifs
                         dns_servers[dns_server] = {"Main domains": {}}
-                    
-                    # Add the IP protocol (here, most of the time, it will be IPv4)
-                    # dns_servers[dns_server]["IP Protocol"] = ip_version
 
-                    # Add the authoritative DNS server if it's not already in the list
+                    # ici on ajoute le serveur autoritatif si celui-ci ne se trouve pas déjà dans le dictionnaire
                     auth_serv = get_authoritative_nameserver(dns_server)
                     if auth_serv not in dns_servers[dns_server]["Main domains"].items():
                         dns_servers[dns_server]["Main domains"] = auth_serv
             except AttributeError:
                 pass
     
-    # Write the data to a json file
+    # et finalement on écrit le dictionnaire dans le fichier json
     with open('.\\dns_servers.json', 'w') as file:
         json.dump(dns_servers, file, indent=4)
 
@@ -43,7 +44,7 @@ def get_dns_servers(pcap_file):
 
 
 
-# get autoriative dns servers for the dns servers
+# on prend les serveurs autoritatifs du serveur dns donné (ou alias)
 
 def get_authoritative_nameserver(domain):
     server_list = []
@@ -68,7 +69,6 @@ def get_authoritative_nameserver(domain):
     le code ici est pour enlever le www. ou autre préfixe du nom de domaine pour obtenir 
     le nom de domaine final si jamais la liste est tojours vide ou qu'on n'a pas atteint le nom de domaine final
     """
-    #if server_list == []:
     final_str = ""
     res = domain.split(".")
     for i in range(len(res[1:])):
@@ -98,7 +98,6 @@ def ns_dns(domain, liste):
         for server in servers:
             if server not in liste:
                 liste.append(str(server))
-            #ns_dns(str(server), liste)
     except dns.resolver.NoAnswer:
         pass
     return liste
@@ -108,5 +107,8 @@ def ns_dns(domain, liste):
 if __name__ == '__main__':
     pass
     
-    # uncomment the lines below to run the functions (and comment the pass statement above)
-    #get_dns_servers(pcap_file='.\\icloud-pkg.pcapng')
+    # le fichier qui est déjà comme argument est le fichier avec la capture Ethernet
+    # enlevez le 'pass' au-dessus afin de faire tourner le script
+    # enlevez le commentaire de la ligne en dessous afin de faire tourner le script
+    
+    # get_dns_servers(pcap_file='.\\icloud-pkg.pcapng')
