@@ -1,576 +1,520 @@
 {
     "www.icloud.com": {
-        "Sub-domains": [
+        "Main domains": [
             "www-cdn.icloud.com.akadns.net.",
             "www.icloud.com-v1.edgekey.net.",
             "e4478.dscb.akamaiedge.net.",
+            "d.ns.apple.com.",
             "b.ns.apple.com.",
             "a.ns.apple.com.",
-            "c.ns.apple.com.",
-            "d.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+            "c.ns.apple.com."
+        ]
     },
     "e4478.dscb.akamaiedge.net": {
-        "Sub-domains": [
-            "n5dscb.akamaiedge.net.",
+        "Main domains": [
+            "n2dscb.akamaiedge.net.",
             "n1dscb.akamaiedge.net.",
-            "n4dscb.akamaiedge.net.",
             "n3dscb.akamaiedge.net.",
+            "n5dscb.akamaiedge.net.",
+            "n4dscb.akamaiedge.net.",
             "n0dscb.akamaiedge.net.",
-            "n6dscb.akamaiedge.net.",
             "n7dscb.akamaiedge.net.",
-            "n2dscb.akamaiedge.net."
-        ],
-        "IP Protocol": "IPv4"
+            "n6dscb.akamaiedge.net."
+        ]
     },
     "www.google.com": {
-        "Sub-domains": [
-            "ns4.google.com.",
-            "ns3.google.com.",
+        "Main domains": [
             "ns1.google.com.",
-            "ns2.google.com."
-        ],
-        "IP Protocol": "IPv4"
+            "ns2.google.com.",
+            "ns4.google.com.",
+            "ns3.google.com."
+        ]
     },
     "www.apple.com": {
-        "Sub-domains": [
+        "Main domains": [
             "www.apple.com.edgekey.net.",
             "www.apple.com.edgekey.net.globalredir.akadns.net.",
             "e6858.dscx.akamaiedge.net.",
-            "b.ns.apple.com.",
             "a.ns.apple.com.",
+            "b.ns.apple.com.",
             "c.ns.apple.com.",
             "d.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+        ]
     },
     "e6858.dscx.akamaiedge.net": {
-        "Sub-domains": [
-            "n3dscx.akamaiedge.net.",
+        "Main domains": [
             "n1dscx.akamaiedge.net.",
-            "n5dscx.akamaiedge.net.",
-            "n0dscx.akamaiedge.net.",
             "n2dscx.akamaiedge.net.",
+            "n0dscx.akamaiedge.net.",
             "n4dscx.akamaiedge.net.",
+            "n3dscx.akamaiedge.net.",
+            "n5dscx.akamaiedge.net.",
             "n7dscx.akamaiedge.net.",
             "n6dscx.akamaiedge.net."
-        ],
-        "IP Protocol": "IPv4"
+        ]
     },
     "incoming.telemetry.mozilla.org": {
-        "Sub-domains": [
+        "Main domains": [
             "telemetry-incoming.r53-2.services.mozilla.com."
-        ],
-        "IP Protocol": "IPv4"
+        ]
     },
     "gateway.icloud.com": {
-        "Sub-domains": [
+        "Main domains": [
             "gateway.fe2.apple-dns.net.",
-            "b.ns.apple.com.",
             "c.ns.apple.com.",
             "d.ns.apple.com.",
+            "b.ns.apple.com.",
             "a.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+        ]
     },
     "ckdatabasews.icloud.com": {
-        "Sub-domains": [
+        "Main domains": [
             "ckdatabasews.fe2.apple-dns.net.",
-            "b.ns.apple.com.",
             "a.ns.apple.com.",
             "c.ns.apple.com.",
-            "d.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+            "d.ns.apple.com.",
+            "b.ns.apple.com."
+        ]
     },
     "cvws.icloud-content.com": {
-        "Sub-domains": [
+        "Main domains": [
             "cvws.apple-dns.net.",
             "ns-747.awsdns-29.net.",
             "ns-1156.awsdns-16.org.",
             "ns-1651.awsdns-14.co.uk.",
             "ns-303.awsdns-37.com.",
-            "c.ns.apple.com.",
-            "d.ns.apple.com.",
-            "b.ns.apple.com.",
-            "a.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
-    },
-    "setup.icloud.com": {
-        "Sub-domains": [
-            "setup.fe2.apple-dns.net.",
             "d.ns.apple.com.",
             "b.ns.apple.com.",
             "a.ns.apple.com.",
             "c.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+        ]
+    },
+    "setup.icloud.com": {
+        "Main domains": [
+            "setup.fe2.apple-dns.net.",
+            "c.ns.apple.com.",
+            "d.ns.apple.com.",
+            "b.ns.apple.com.",
+            "a.ns.apple.com."
+        ]
     },
     "telemetry-incoming.r53-2.services.mozilla.com": {
-        "Sub-domains": [
-            "ns-772.awsdns-32.net.",
-            "ns-1507.awsdns-60.org.",
+        "Main domains": [
             "ns-1537.awsdns-00.co.uk.",
-            "ns-206.awsdns-25.com."
-        ],
-        "IP Protocol": "IPv4"
+            "ns-206.awsdns-25.com.",
+            "ns-772.awsdns-32.net.",
+            "ns-1507.awsdns-60.org."
+        ]
     },
     "gateway.fe2.apple-dns.net": {
-        "Sub-domains": [
-            "ns-383.awsdns-47.com.",
-            "ns-693.awsdns-22.net.",
-            "ns-1396.awsdns-46.org.",
-            "ns-1919.awsdns-47.co.uk."
-        ],
-        "IP Protocol": "IPv4"
-    },
-    "ckdatabasews.fe2.apple-dns.net": {
-        "Sub-domains": [
+        "Main domains": [
             "ns-1919.awsdns-47.co.uk.",
             "ns-383.awsdns-47.com.",
             "ns-693.awsdns-22.net.",
             "ns-1396.awsdns-46.org."
-        ],
-        "IP Protocol": "IPv4"
+        ]
+    },
+    "ckdatabasews.fe2.apple-dns.net": {
+        "Main domains": [
+            "ns-383.awsdns-47.com.",
+            "ns-693.awsdns-22.net.",
+            "ns-1396.awsdns-46.org.",
+            "ns-1919.awsdns-47.co.uk."
+        ]
     },
     "cvws.apple-dns.net": {
-        "Sub-domains": [
-            "ns-1156.awsdns-16.org.",
-            "ns-1651.awsdns-14.co.uk.",
+        "Main domains": [
             "ns-303.awsdns-37.com.",
             "ns-747.awsdns-29.net.",
+            "ns-1156.awsdns-16.org.",
+            "ns-1651.awsdns-14.co.uk.",
+            "c.ns.apple.com.",
+            "d.ns.apple.com.",
+            "a.ns.apple.com.",
+            "b.ns.apple.com."
+        ]
+    },
+    "setup.fe2.apple-dns.net": {
+        "Main domains": [
+            "ns-383.awsdns-47.com.",
+            "ns-693.awsdns-22.net.",
+            "ns-1396.awsdns-46.org.",
+            "ns-1919.awsdns-47.co.uk."
+        ]
+    },
+    "appleid.cdn-apple.com": {
+        "Main domains": [
+            "appleid.cdn-apple.com.akadns.net.",
+            "appleid.cdn-apple.com.edgekey.net.",
+            "e2885.e9.akamaiedge.net.",
+            "a.ns.apple.com.",
+            "b.ns.apple.com.",
+            "c.ns.apple.com.",
+            "d.ns.apple.com."
+        ]
+    },
+    "p34-mailws.icloud.com": {
+        "Main domains": [
+            "p34-mailws.icloud.com.akadns.net.",
+            "mr-mailws.icloud.com.akadns.net.",
+            "a.ns.apple.com.",
+            "c.ns.apple.com.",
+            "d.ns.apple.com.",
+            "b.ns.apple.com."
+        ]
+    },
+    "p34-docws.icloud.com": {
+        "Main domains": [
+            "docws.fe2.apple-dns.net.",
             "b.ns.apple.com.",
             "a.ns.apple.com.",
             "c.ns.apple.com.",
             "d.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+        ]
     },
-    "setup.fe2.apple-dns.net": {
-        "Sub-domains": [
+    "p34-ckdatabasews.icloud.com": {
+        "Main domains": [
+            "ckdatabasews.fe2.apple-dns.net.",
+            "b.ns.apple.com.",
+            "a.ns.apple.com.",
+            "c.ns.apple.com.",
+            "d.ns.apple.com."
+        ]
+    },
+    "p34-keyvalueservice.icloud.com": {
+        "Main domains": [
+            "keyvalueservice.fe2.apple-dns.net.",
+            "d.ns.apple.com.",
+            "b.ns.apple.com.",
+            "a.ns.apple.com.",
+            "c.ns.apple.com."
+        ]
+    },
+    "e2885.e9.akamaiedge.net": {
+        "Main domains": [
+            "n4e9.akamaiedge.net.",
+            "n3e9.akamaiedge.net.",
+            "n7e9.akamaiedge.net.",
+            "n1e9.akamaiedge.net.",
+            "n0e9.akamaiedge.net.",
+            "n6e9.akamaiedge.net.",
+            "n2e9.akamaiedge.net.",
+            "n5e9.akamaiedge.net."
+        ]
+    },
+    "mr-mailws.icloud.com.akadns.net": {
+        "Main domains": []
+    },
+    "docws.fe2.apple-dns.net": {
+        "Main domains": [
             "ns-693.awsdns-22.net.",
             "ns-1396.awsdns-46.org.",
             "ns-1919.awsdns-47.co.uk.",
             "ns-383.awsdns-47.com."
-        ],
-        "IP Protocol": "IPv4"
-    },
-    "appleid.cdn-apple.com": {
-        "Sub-domains": [
-            "appleid.cdn-apple.com.akadns.net.",
-            "appleid.cdn-apple.com.edgekey.net.",
-            "e2885.e9.akamaiedge.net.",
-            "c.ns.apple.com.",
-            "d.ns.apple.com.",
-            "b.ns.apple.com.",
-            "a.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
-    },
-    "p34-mailws.icloud.com": {
-        "Sub-domains": [
-            "p34-mailws.icloud.com.akadns.net.",
-            "mr-mailws.icloud.com.akadns.net.",
-            "b.ns.apple.com.",
-            "a.ns.apple.com.",
-            "c.ns.apple.com.",
-            "d.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
-    },
-    "p34-docws.icloud.com": {
-        "Sub-domains": [
-            "docws.fe2.apple-dns.net.",
-            "c.ns.apple.com.",
-            "d.ns.apple.com.",
-            "a.ns.apple.com.",
-            "b.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
-    },
-    "p34-ckdatabasews.icloud.com": {
-        "Sub-domains": [
-            "ckdatabasews.fe2.apple-dns.net.",
-            "a.ns.apple.com.",
-            "c.ns.apple.com.",
-            "d.ns.apple.com.",
-            "b.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
-    },
-    "p34-keyvalueservice.icloud.com": {
-        "Sub-domains": [
-            "keyvalueservice.fe2.apple-dns.net.",
-            "c.ns.apple.com.",
-            "d.ns.apple.com.",
-            "b.ns.apple.com.",
-            "a.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
-    },
-    "e2885.e9.akamaiedge.net": {
-        "Sub-domains": [
-            "n3e9.akamaiedge.net.",
-            "n6e9.akamaiedge.net.",
-            "n4e9.akamaiedge.net.",
-            "n2e9.akamaiedge.net.",
-            "n0e9.akamaiedge.net.",
-            "n7e9.akamaiedge.net.",
-            "n5e9.akamaiedge.net.",
-            "n1e9.akamaiedge.net."
-        ],
-        "IP Protocol": "IPv4"
-    },
-    "mr-mailws.icloud.com.akadns.net": {
-        "Sub-domains": [],
-        "IP Protocol": "IPv4"
-    },
-    "docws.fe2.apple-dns.net": {
-        "Sub-domains": [
-            "ns-383.awsdns-47.com.",
-            "ns-693.awsdns-22.net.",
-            "ns-1396.awsdns-46.org.",
-            "ns-1919.awsdns-47.co.uk."
-        ],
-        "IP Protocol": "IPv4"
+        ]
     },
     "keyvalueservice.fe2.apple-dns.net": {
-        "Sub-domains": [
+        "Main domains": [
             "ns-1919.awsdns-47.co.uk.",
             "ns-383.awsdns-47.com.",
             "ns-693.awsdns-22.net.",
             "ns-1396.awsdns-46.org."
-        ],
-        "IP Protocol": "IPv4"
+        ]
     },
     "p34-setup.icloud.com": {
-        "Sub-domains": [
+        "Main domains": [
             "setup.fe2.apple-dns.net.",
+            "c.ns.apple.com.",
             "d.ns.apple.com.",
             "b.ns.apple.com.",
-            "a.ns.apple.com.",
-            "c.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+            "a.ns.apple.com."
+        ]
     },
     "p34-contactsws.icloud.com": {
-        "Sub-domains": [
+        "Main domains": [
             "contactsws.fe2.apple-dns.net.",
-            "d.ns.apple.com.",
             "b.ns.apple.com.",
             "a.ns.apple.com.",
-            "c.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+            "c.ns.apple.com.",
+            "d.ns.apple.com."
+        ]
     },
     "p34-calendarws.icloud.com": {
-        "Sub-domains": [
+        "Main domains": [
             "calendarws.fe2.apple-dns.net.",
             "b.ns.apple.com.",
             "a.ns.apple.com.",
             "c.ns.apple.com.",
             "d.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+        ]
     },
     "p34-remindersws.icloud.com": {
-        "Sub-domains": [
+        "Main domains": [
             "remindersws.fe2.apple-dns.net.",
-            "b.ns.apple.com.",
             "a.ns.apple.com.",
             "c.ns.apple.com.",
-            "d.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+            "d.ns.apple.com.",
+            "b.ns.apple.com."
+        ]
     },
     "experiments.apple.com": {
-        "Sub-domains": [
+        "Main domains": [
             "ab.apple.com.akadns.net.",
             "experiments.apple.com.edgekey.net.",
             "e3925.dscg.akamaiedge.net.",
+            "a.ns.apple.com.",
             "c.ns.apple.com.",
             "d.ns.apple.com.",
-            "a.ns.apple.com.",
             "b.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+        ]
     },
     "gatewayws.icloud.com": {
-        "Sub-domains": [
+        "Main domains": [
             "gatewayws.fe2.apple-dns.net.",
-            "c.ns.apple.com.",
             "d.ns.apple.com.",
+            "a.ns.apple.com.",
             "b.ns.apple.com.",
-            "a.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+            "c.ns.apple.com."
+        ]
     },
     "contactsws.fe2.apple-dns.net": {
-        "Sub-domains": [
+        "Main domains": [
+            "ns-383.awsdns-47.com.",
             "ns-693.awsdns-22.net.",
             "ns-1396.awsdns-46.org.",
-            "ns-1919.awsdns-47.co.uk.",
-            "ns-383.awsdns-47.com."
-        ],
-        "IP Protocol": "IPv4"
+            "ns-1919.awsdns-47.co.uk."
+        ]
     },
     "calendarws.fe2.apple-dns.net": {
-        "Sub-domains": [
+        "Main domains": [
             "ns-1396.awsdns-46.org.",
             "ns-1919.awsdns-47.co.uk.",
             "ns-383.awsdns-47.com.",
             "ns-693.awsdns-22.net."
-        ],
-        "IP Protocol": "IPv4"
+        ]
     },
     "p34-mccgateway.icloud.com": {
-        "Sub-domains": [
+        "Main domains": [
             "mccgateway.fe2.apple-dns.net.",
             "d.ns.apple.com.",
             "b.ns.apple.com.",
             "a.ns.apple.com.",
             "c.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+        ]
     },
     "remindersws.fe2.apple-dns.net": {
-        "Sub-domains": [
-            "ns-693.awsdns-22.net.",
-            "ns-1396.awsdns-46.org.",
-            "ns-1919.awsdns-47.co.uk.",
-            "ns-383.awsdns-47.com."
-        ],
-        "IP Protocol": "IPv4"
-    },
-    "e3925.dscg.akamaiedge.net": {
-        "Sub-domains": [
-            "n3dscg.akamaiedge.net.",
-            "n4dscg.akamaiedge.net.",
-            "n5dscg.akamaiedge.net.",
-            "n7dscg.akamaiedge.net.",
-            "n0dscg.akamaiedge.net.",
-            "n2dscg.akamaiedge.net.",
-            "n1dscg.akamaiedge.net.",
-            "n6dscg.akamaiedge.net."
-        ],
-        "IP Protocol": "IPv4"
-    },
-    "ocsp.apple.com": {
-        "Sub-domains": [
-            "ocsp-lb.apple.com.akadns.net.",
-            "ocsp-a.g.aaplimg.com.",
-            "b.ns.apple.com.",
-            "a.ns.apple.com.",
-            "c.ns.apple.com.",
-            "d.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
-    },
-    "gatewayws.fe2.apple-dns.net": {
-        "Sub-domains": [
-            "ns-383.awsdns-47.com.",
-            "ns-693.awsdns-22.net.",
-            "ns-1396.awsdns-46.org.",
-            "ns-1919.awsdns-47.co.uk."
-        ],
-        "IP Protocol": "IPv4"
-    },
-    "mccgateway.fe2.apple-dns.net": {
-        "Sub-domains": [
+        "Main domains": [
             "ns-1396.awsdns-46.org.",
             "ns-1919.awsdns-47.co.uk.",
             "ns-383.awsdns-47.com.",
             "ns-693.awsdns-22.net."
-        ],
-        "IP Protocol": "IPv4"
+        ]
     },
-    "ocsp-a.g.aaplimg.com": {
-        "Sub-domains": [
-            "ns3.g.aaplimg.com.",
-            "b.gslb.aaplimg.com.",
-            "ns4.g.aaplimg.com.",
-            "ns2.g.aaplimg.com.",
-            "ns1.g.aaplimg.com.",
-            "a.gslb.aaplimg.com."
-        ],
-        "IP Protocol": "IPv4"
+    "e3925.dscg.akamaiedge.net": {
+        "Main domains": [
+            "n4dscg.akamaiedge.net.",
+            "n1dscg.akamaiedge.net.",
+            "n5dscg.akamaiedge.net.",
+            "n6dscg.akamaiedge.net.",
+            "n0dscg.akamaiedge.net.",
+            "n3dscg.akamaiedge.net.",
+            "n7dscg.akamaiedge.net.",
+            "n2dscg.akamaiedge.net."
+        ]
     },
-    "p34-pushws.icloud.com": {
-        "Sub-domains": [
-            "pushws.fe2.apple-dns.net.",
+    "ocsp.apple.com": {
+        "Main domains": [
+            "ocsp-lb.apple.com.akadns.net.",
+            "ocsp-a.g.aaplimg.com.",
+            "a.ns.apple.com.",
             "b.ns.apple.com.",
             "c.ns.apple.com.",
+            "d.ns.apple.com."
+        ]
+    },
+    "gatewayws.fe2.apple-dns.net": {
+        "Main domains": [
+            "ns-693.awsdns-22.net.",
+            "ns-1396.awsdns-46.org.",
+            "ns-1919.awsdns-47.co.uk.",
+            "ns-383.awsdns-47.com."
+        ]
+    },
+    "mccgateway.fe2.apple-dns.net": {
+        "Main domains": [
+            "ns-693.awsdns-22.net.",
+            "ns-1396.awsdns-46.org.",
+            "ns-1919.awsdns-47.co.uk.",
+            "ns-383.awsdns-47.com."
+        ]
+    },
+    "ocsp-a.g.aaplimg.com": {
+        "Main domains": [
+            "ns3.g.aaplimg.com.",
+            "ns1.g.aaplimg.com.",
+            "b.gslb.aaplimg.com.",
+            "ns4.g.aaplimg.com.",
+            "a.gslb.aaplimg.com.",
+            "ns2.g.aaplimg.com."
+        ]
+    },
+    "p34-pushws.icloud.com": {
+        "Main domains": [
+            "pushws.fe2.apple-dns.net.",
             "d.ns.apple.com.",
-            "a.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+            "b.ns.apple.com.",
+            "a.ns.apple.com.",
+            "c.ns.apple.com."
+        ]
     },
     "pushws.fe2.apple-dns.net": {
-        "Sub-domains": [
+        "Main domains": [
+            "ns-693.awsdns-22.net.",
+            "ns-1396.awsdns-46.org.",
+            "ns-1919.awsdns-47.co.uk.",
+            "ns-383.awsdns-47.com."
+        ]
+    },
+    "p34-ckdevice.icloud.com": {
+        "Main domains": [
+            "ckdevice.fe2.apple-dns.net.",
+            "c.ns.apple.com.",
+            "d.ns.apple.com.",
+            "a.ns.apple.com.",
+            "b.ns.apple.com."
+        ]
+    },
+    "ckdevice.fe2.apple-dns.net": {
+        "Main domains": [
             "ns-1919.awsdns-47.co.uk.",
             "ns-383.awsdns-47.com.",
             "ns-693.awsdns-22.net.",
             "ns-1396.awsdns-46.org."
-        ],
-        "IP Protocol": "IPv4"
-    },
-    "p34-ckdevice.icloud.com": {
-        "Sub-domains": [
-            "ckdevice.fe2.apple-dns.net.",
-            "b.ns.apple.com.",
-            "c.ns.apple.com.",
-            "d.ns.apple.com.",
-            "a.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
-    },
-    "ckdevice.fe2.apple-dns.net": {
-        "Sub-domains": [
-            "ns-383.awsdns-47.com.",
-            "ns-693.awsdns-22.net.",
-            "ns-1396.awsdns-46.org.",
-            "ns-1919.awsdns-47.co.uk."
-        ],
-        "IP Protocol": "IPv4"
+        ]
     },
     "webcourier.push.apple.com": {
-        "Sub-domains": [
+        "Main domains": [
             "webcourier-vs.push-apple.com.akadns.net.",
+            "c.ns.apple.com.",
             "d.ns.apple.com.",
             "a.ns.apple.com.",
-            "b.ns.apple.com.",
-            "c.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+            "b.ns.apple.com."
+        ]
     },
     "webcourier-vs.push-apple.com.akadns.net": {
-        "Sub-domains": [],
-        "IP Protocol": "IPv4"
+        "Main domains": []
     },
     "cvws-001.icloud-content.com": {
-        "Sub-domains": [
+        "Main domains": [
             "cvws-001.cvws.apple-dns.net.",
             "d.ns.apple.com.",
             "b.ns.apple.com.",
             "a.ns.apple.com.",
             "c.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+        ]
     },
     "cvws-002.icloud-content.com": {
-        "Sub-domains": [
+        "Main domains": [
             "cvws-002.cvws.apple-dns.net.",
             "b.ns.apple.com.",
             "a.ns.apple.com.",
             "c.ns.apple.com.",
             "d.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+        ]
     },
     "cvws-003.icloud-content.com": {
-        "Sub-domains": [
+        "Main domains": [
             "cvws-003.cvws.apple-dns.net.",
+            "b.ns.apple.com.",
             "c.ns.apple.com.",
             "d.ns.apple.com.",
-            "b.ns.apple.com.",
             "a.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+        ]
     },
     "cdn.apple-cloudkit.com": {
-        "Sub-domains": [
+        "Main domains": [
             "cdn.apple-cloudkit.com.edgekey.net.",
             "e9335.b.akamaiedge.net.",
+            "b.ns.apple.com.",
             "c.ns.apple.com.",
             "d.ns.apple.com.",
-            "a.ns.apple.com.",
-            "b.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+            "a.ns.apple.com."
+        ]
     },
     "cvws-001.cvws.apple-dns.net": {
-        "Sub-domains": [
-            "ns-1156.awsdns-16.org.",
+        "Main domains": [
             "ns-1651.awsdns-14.co.uk.",
             "ns-303.awsdns-37.com.",
-            "ns-747.awsdns-29.net."
-        ],
-        "IP Protocol": "IPv4"
+            "ns-747.awsdns-29.net.",
+            "ns-1156.awsdns-16.org."
+        ]
     },
     "cvws-002.cvws.apple-dns.net": {
-        "Sub-domains": [
+        "Main domains": [
+            "ns-303.awsdns-37.com.",
             "ns-747.awsdns-29.net.",
             "ns-1156.awsdns-16.org.",
-            "ns-1651.awsdns-14.co.uk.",
-            "ns-303.awsdns-37.com."
-        ],
-        "IP Protocol": "IPv4"
+            "ns-1651.awsdns-14.co.uk."
+        ]
     },
     "e9335.b.akamaiedge.net": {
-        "Sub-domains": [
-            "n5b.akamaiedge.net.",
-            "n6b.akamaiedge.net.",
-            "n2b.akamaiedge.net.",
+        "Main domains": [
             "n3b.akamaiedge.net.",
-            "n4b.akamaiedge.net.",
+            "n2b.akamaiedge.net.",
             "n1b.akamaiedge.net.",
             "n0b.akamaiedge.net.",
-            "n7b.akamaiedge.net."
-        ],
-        "IP Protocol": "IPv4"
+            "n6b.akamaiedge.net.",
+            "n7b.akamaiedge.net.",
+            "n4b.akamaiedge.net.",
+            "n5b.akamaiedge.net."
+        ]
     },
     "cvws-003.cvws.apple-dns.net": {
-        "Sub-domains": [
-            "ns-1156.awsdns-16.org.",
-            "ns-1651.awsdns-14.co.uk.",
+        "Main domains": [
             "ns-303.awsdns-37.com.",
-            "ns-747.awsdns-29.net."
-        ],
-        "IP Protocol": "IPv4"
+            "ns-747.awsdns-29.net.",
+            "ns-1156.awsdns-16.org.",
+            "ns-1651.awsdns-14.co.uk."
+        ]
     },
     "feedbackws.icloud.com": {
-        "Sub-domains": [
+        "Main domains": [
             "feedbackws.fe2.apple-dns.net.",
+            "a.ns.apple.com.",
             "c.ns.apple.com.",
             "d.ns.apple.com.",
-            "a.ns.apple.com.",
             "b.ns.apple.com."
-        ],
-        "IP Protocol": "IPv4"
+        ]
     },
     "feedbackws.fe2.apple-dns.net": {
-        "Sub-domains": [
-            "ns-1396.awsdns-46.org.",
-            "ns-1919.awsdns-47.co.uk.",
+        "Main domains": [
             "ns-383.awsdns-47.com.",
-            "ns-693.awsdns-22.net."
-        ],
-        "IP Protocol": "IPv4"
+            "ns-693.awsdns-22.net.",
+            "ns-1396.awsdns-46.org.",
+            "ns-1919.awsdns-47.co.uk."
+        ]
     },
     "safebrowsing.googleapis.com": {
-        "Sub-domains": [
+        "Main domains": [
             "ns4.google.com.",
             "ns3.google.com.",
-            "ns1.google.com.",
-            "ns2.google.com."
-        ],
-        "IP Protocol": "IPv4"
+            "ns2.google.com.",
+            "ns1.google.com."
+        ]
     },
     "self.events.data.microsoft.com": {
-        "Sub-domains": [
+        "Main domains": [
             "self-events-data.trafficmanager.net.",
-            "onedscolprdcus15.centralus.cloudapp.azure.com."
-        ],
-        "IP Protocol": "IPv4"
+            "onedscolprdeus22.eastus.cloudapp.azure.com."
+        ]
     },
     "www.google.com.420352670881483.windows-display-service.com": {
-        "Sub-domains": [
+        "Main domains": [
             "windows-display-service.com.",
+            "ns1.nameserverservice.com.",
+            "ns2.nameserverservice.com.",
             "ns2.nameserverservice.com.",
             "ns1.nameserverservice.com."
-        ],
-        "IP Protocol": "IPv4"
+        ]
     }
 }
